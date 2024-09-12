@@ -1,0 +1,73 @@
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.left-links {
+    margin-right: auto;
+}
+
+.right-links {
+    margin-left: auto;
+}
+
+/* Background Container Styles */
+.background-container {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 70px); /* Ajuste la hauteur pour tenir compte de la barre de navigation */
+    background-color: #0056b3; /* Couleur de fond */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Button Styles */
+.large-button {
+    padding: 20px 40px;
+    font-size: 24px;
+    color: white;
+    background-color: #003d7a;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.large-button:hover {
+    background-color: #00294e;
+    transform: scale(1.05);
+}

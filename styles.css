@@ -1,0 +1,212 @@
+/* Reset général pour éliminer les marges et paddings par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #202020; /* Ajout du fond noir */
+    color: #ffffff; /* Changement de la couleur du texte pour blanc */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    margin-bottom: 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Gotham Condensed', sans-serif;
+}
+
+.nav-links a:hover {
+    color: #caa43b;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.left-links {
+    margin-right: auto;
+}
+
+.right-links {
+    margin-left: auto;
+}
+
+/* Carrousel Styles */
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+    width: 100%;
+    flex: 0 0 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Section Plat du Jour */
+.plat-du-jour {
+    width: 90%;
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: 'Baskerville SC', serif;
+    color: #000000; /* Couleur du texte de cette section en noir */
+}
+
+.plat-du-jour h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #caa43b;
+    font-weight: 700;
+}
+
+.plat-du-jour p {
+    font-size: 1.5em;
+    color: #666;
+    line-height: 1.6;
+}
+
+.plat-du-jour strong {
+    color: #000;
+    font-size: 1.6em;
+}
+
+/* Styles pour le gros bouton */
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1.2em;
+    font-family: 'Gotham Condensed', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+/* -------- Responsive Styles -------- */
+
+/* Styles pour les tablettes (écran < 768px) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .logo img {
+        height: 40px;
+        margin-bottom: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        margin: 5px 0;
+    }
+
+    .carousel-image {
+        height: 250px; /* Ajustement de la hauteur des images sur tablette */
+    }
+
+    .plat-du-jour {
+        padding: 30px;
+    }
+
+    .plat-du-jour h2 {
+        font-size: 2em;
+    }
+
+    .plat-du-jour p {
+        font-size: 1.2em;
+    }
+
+    .button {
+        padding: 12px 25px;
+        font-size: 1.1em;
+    }
+}
+
+/* Styles pour les téléphones (écran < 480px) */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .nav-links {
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 8px 0;
+    }
+
+    .carousel-image {
+        height: 180px; /* Ajustement de la hauteur des images sur mobile */
+    }
+
+    .plat-du-jour {
+        padding: 20px;
+    }
+
+    .plat-du-jour h2 {
+        font-size: 1.8em;
+    }
+
+    .plat-du-jour p {
+        font-size: 1em;
+    }
+
+    .button {
+        width: 100%;
+        padding: 15px 0;
+        font-size: 1.1em;
+    }
+}

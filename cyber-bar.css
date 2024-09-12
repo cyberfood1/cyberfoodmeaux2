@@ -1,0 +1,171 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Gotham Condensed', sans-serif;
+}
+
+.nav-links a:hover {
+    color: #caa43b;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.left-links {
+    margin-right: auto;
+}
+
+.right-links {
+    margin-left: auto;
+}
+
+/* Content Styles */
+.cyber-bar-content {
+    padding: 40px;
+    background-color: #f4f4f4;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+p {
+    font-size: 18px; /* Correction de la valeur de la police */
+    color: #666;
+    text-align: center;
+}
+
+/* Menu Categories */
+.menu-category {
+    margin-bottom: 40px;
+}
+
+.menu-category h2 {
+    font-size: 28px;
+    background-color: #444;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    border-radius: 5px;
+}
+
+.menu-item {
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.menu-item p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.menu-item p span {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cyber-bar-content {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .menu-item p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .logo img {
+        height: 40px;
+        margin-bottom: 10px;
+    }
+
+    .cyber-bar-content {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .menu-item {
+        padding: 15px;
+    }
+
+    .menu-item p {
+        font-size: 14px;
+    }
+}
+
+.cyber-bar-logo {
+    display: block;
+    margin: 0 auto 10px auto; /* Centre l'image avec un espace en dessous */
+    max-width: 600px; /* Ajuste la taille maximale si besoin */
+    height: auto; /* Conserve les proportions de l'image */
+}
